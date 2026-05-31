@@ -72,7 +72,7 @@ const KhyzModss = makeWASocket({
 });
 
 const number = "628XXXXX";
-const code = await KhyzModss.requestPairingCode(number.trim) /* Use : (number, "YYYYYYYY") for custom-pairing */
+const code = await KhyzModss.requestPairingCode(number.trim()) /* Use : (number, "YYYYYYYY") for custom-pairing */
 
 console.log("Ur pairing code : " + code)
 ```
